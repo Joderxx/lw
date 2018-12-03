@@ -9,9 +9,11 @@ function addProxy(btn) {
     if (proxyFlag){
         proxy.innerHTML = proxyTemp();
         btn.innerHTML = '删除代理';
+        btn.className = "btn btn-danger"
         proxyFlag = false;
     } else {
         btn.innerHTML = '添加代理'
+        btn.className = "btn btn-primary"
         proxy.innerHTML = '';
         proxyFlag = true;
     }
@@ -22,9 +24,11 @@ function addHeaderForm(btn) {
     if (headerFlag){
         header.innerHTML= headerTemp();
         btn.innerHTML = '删除头部信息';
+        btn.className = "btn btn-danger"
         headerFlag = false;
     } else {
         header.innerHTML= '';
+        btn.className = "btn btn-info"
         btn.innerHTML = '添加头部信息';
         headerFlag = true;
     }
