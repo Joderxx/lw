@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>主页</title>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
-    <link href="https://cdn.bootcss.com/bootstrap-select/2.0.0-beta1/css/bootstrap-select.css" rel="stylesheet">    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-    <script src="js/jQuery.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap-select/2.0.0-beta1/css/bootstrap-select.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/templete.js"></script>
     <script src="js/index.js"></script>
@@ -43,10 +43,10 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="url" class="col-sm-1 control-label">URL</label>
+                    <label for="url" class="col-sm-1 control-label" >URL</label>
                     <div class="col-sm-10">
                         <div class=" input-group">
-                            <input type="text" class="form-control" id="url" placeholder="URL(例：127.0.0.1)">
+                            <input type="text" class="form-control" id="url" placeholder="URL(例：127.0.0.1)" onkeyup="updateParameter(this)">
                             <span class="input-group-btn">
                                 <button class="btn btn-primary" id="send" type="button">发送</button>
                             </span>
@@ -65,6 +65,9 @@
             </form>
         </div>
         <br>
+        <div id="parameter" class="row col-sm-offset-1 col-sm-10">
+
+        </div>
         <div id="header" class="row col-sm-offset-1 col-sm-10">
 
         </div>

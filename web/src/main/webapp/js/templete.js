@@ -1,3 +1,39 @@
+function paramTemp() {
+    var temp = "<div class=\"row panel panel-info text-center\">\n" +
+        "                <div class=\"panel-heading\">参数信息</div>\n" +
+        "                <div class=\"panel-body\">\n" +
+        "                    <div id=\"parameterInfo\" >\n" +
+
+        "                    </div>\n" +
+        "\n" +
+        "                </div>\n" +
+        "            </div>";
+    return temp;
+}
+
+function paramInfoTemp(index,key,value) {
+    var temp = "<div class=\"row\">\n" +
+        "                            <div class=\"row panel col-sm-offset-1 col-sm-10\">\n" +
+        "                                <div class=\"col-sm-3 \">\n" +
+        "                                    <input type=\"text\" class=\"form-control\" id=\"paramKey_"+index+"\" placeholder=\"参数\" value='"+key+"' readonly>\n" +
+        "                                </div>\n" +
+        "                                <div class=\"col-sm-1 \">\n" +
+        "                                    =\n" +
+        "                                </div>\n" +
+        "                                <div class=\"col-sm-6 \">\n" +
+        "                                    <input type=\"text\" class=\"form-control\" id=\"paramValue_"+index+"\" placeholder=\"参数值\" value='"+value+"' readonly>\n" +
+        "                                </div>" +
+        "                                <div >\n" +
+        "                                   <button type=\"button\" class=\"btn btn-danger btn-xs\" value='2' onclick='delParam(this)'>\n" +
+        "                                       <span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span>\n" +
+        "                                   </button>\n" +
+        "                               </div>"+
+        "                            </div>\n" +
+        "\n" +
+        "                        </div>";
+    return temp;
+}
+
 function proxyTemp() {
     var temp = "<div class=\"row panel panel-info text-center\">\n" +
         "                <div class=\"panel-heading\">代理</div>\n" +
@@ -30,7 +66,7 @@ function headerTemp() {
                              "<div id='headers'></div>"+
         "                    <div class=\"row\">\n" +
         "                        <form class=\"form-horizontal\">\n" +
-        "                            <div class=\"btn-group btn-group-sm\">\n" +
+        "                            <div class=\"btn-group btn-group-xs\">\n" +
         "                                <button type=\"button\" class=\"btn btn-success\" onclick='addHeaderInfo(this)'>新增头部</button>\n" +
         "                            </div>\n" +
         "                        </form>\n" +
@@ -75,7 +111,7 @@ function conditionTemp(index) {
         "           </div>" +
         "           <div class=\"row \">" +
         "               <form class=\"form-horizontal\">\n" +
-        "                   <div class=\"btn-group btn-group-sm\">\n" +
+        "                   <div class=\"btn-group btn-group-xs\">\n" +
         "                        <button type=\"button\" class=\"btn btn-success \">新增条件</button>\n" +
         "                    </div>\n" +
         "                </form>\n" +
