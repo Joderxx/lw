@@ -114,11 +114,7 @@ function addHeaderInfo(btn) {
 
 function delHeaderInfo(div) {
     var div = document.getElementById(div);
-}
-
-function fbHeaderInfo(div) {
-    headerNum--;
-    var div = document.getElementById(div);
+    div.parentNode.removeChild(div)
 }
 
 

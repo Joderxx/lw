@@ -59,6 +59,7 @@
                         <button type="button" class="btn btn-primary" onclick="addCondition(this)">添加条件</button>
                         <button type="button" class="btn btn-info" onclick="addHeaderForm(this)">添加头部信息</button>
                         <button type="button" class="btn btn-primary" onclick="addProxy(this)">添加代理</button>
+                        <button type="button" class="btn btn-info" >下载源码</button>
                     </div>
                 </div>
 
@@ -106,13 +107,22 @@
                                                 <input type="text" class="form-control" id="condition" placeholder="条件">
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <label for="condition" class="col-sm-2 control-label">选取条件</label>
+                                            <div class="col-sm-1">
+                                                <input type="radio" name="select" placeholder="条件" value="text">文本
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <input type="radio" name="select" placeholder="条件" value="attr">属性
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input type="text" id="attribute" placeholder="属性(例：name)">
+                                            </div>
+                                        </div>
                                         <div class="form-group-sm">
                                             <div class="col-sm-5"></div>
                                             <div >
-                                                <button type="button" class="btn btn-warning btn-xs">
-                                                    <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
-                                                </button>
-                                                <button type="button" class="btn btn-danger btn-xs">
+                                                <button type="button" class="btn btn-danger btn-xs" value="2">
                                                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                                                 </button>
                                             </div>
@@ -135,42 +145,6 @@
             </div>
         </div>
 
-        <div class="row col-sm-offset-1 col-sm-10">
-            <div class="row panel panel-info text-center">
-                <div class="panel-heading">头部信息</div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="row panel col-sm-offset-1 col-sm-10">
-                            <div class="col-sm-3 ">
-                                <input type="text" class="form-control" id="headerKey" placeholder="头部键">
-                            </div>
-                            <div class="col-sm-1 ">
-                                =
-                            </div>
-                            <div class="col-sm-6 ">
-                                <input type="text" class="form-control" id="headerValue" placeholder="头部值">
-                            </div>
-                            <div >
-                                <button type="button" class="btn btn-warning btn-xs" value="1">
-                                    <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
-                                </button>
-                                <button type="button" class="btn btn-danger btn-xs">
-                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                                </button>
-                            </div>
-                        </div>
-
-                        </div>
-                    <div class="row">
-                        <form class="form-horizontal">
-                            <div class="btn-group btn-group-sm">
-                                <button type="button" class="btn btn-success">新增头部</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 </body>

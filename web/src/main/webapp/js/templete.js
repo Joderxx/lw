@@ -80,18 +80,15 @@ function headerInfoTemp(index) {
     var temp = "<div id='headerInfo_"+index+"' class=\"row\">\n" +
         "                        <div class=\"row panel col-sm-offset-1 col-sm-10\">\n" +
         "                            <div class=\"col-sm-3 \">\n" +
-        "                                <input type=\"text\" class=\"form-control\" id=\"headerKey\"_"+index+" placeholder=\"头部键(例：Cookie)\">\n" +
+        "                                <input type=\"text\" class=\"form-control\" id=\"headerKey_"+index+"\" placeholder=\"头部键(例：Cookie)\">\n" +
         "                            </div>\n" +
         "                            <div class=\"col-sm-1 \">\n" +
         "                                =\n" +
         "                            </div>\n" +
         "                            <div class=\"col-sm-6 \">\n" +
-        "                                <input type=\"text\" class=\"form-control\" id=\"headerValue\"_"+index+" placeholder=\"头部值(例：value123)\">\n" +
+        "                                <input type=\"text\" class=\"form-control\" id=\"headerValue_"+index+"\" placeholder=\"头部值(例：value123)\">\n" +
         "                            </div>\n" +
         "                            <div >\n" +
-        "                                <button type=\"button\" class=\"btn btn-warning btn-xs\" onclick='fbHeaderInfo(\"headerInfo_"+index+"\")'>\n" +
-        "                                    <span class=\"glyphicon glyphicon-ban-circle\" aria-hidden=\"true\"></span>\n" +
-        "                                </button>\n" +
         "                                <button type=\"button\" class=\"btn btn-danger btn-xs\" onclick='delHeaderInfo(\"headerInfo_"+index+"\")' >\n" +
         "                                    <span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span>\n" +
         "                                </button>\n" +
